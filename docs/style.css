@@ -32,6 +32,113 @@
     --shadow:
         5px 5px 0 #999;
 
+    --page-bg: #dedede;
+    --page-dot: #ffffff;
+    --surface: #fff;
+    --chrome: #eee;
+    --accent-start: #f84aa0;
+    --accent-end: #d91878;
+    --arcade-bg: #ffe5f2;
+    --arcade-bg-end: #ebe0ff;
+    --body-font: Arial, Helvetica, sans-serif;
+    --bug-header-start: #5940b5;
+    --bug-header-end: #7b5bd6;
+    --bug-board: #fff8d9;
+    --bug-grid: rgba(217, 160, 0, .15);
+    --bug-shadow: #9d741b;
+    --bug-footer: #f3e7c2;
+
+}
+
+html[data-theme="dark-mode"] {
+    --pink: #32e875;
+    --pink-dark: #159e46;
+    --pink-light: #d8ffe5;
+    --purple: #69a7ff;
+    --purple-light: #dce9ff;
+    --cream: #f4f8ff;
+    --silver: #d4deec;
+    --silver-dark: #65738b;
+    --black: #172131;
+    --gray: #526177;
+    --green: #58f0a2;
+    --border: #172131;
+    --shadow: 5px 5px 0 #070b11;
+    --page-bg: #0e1420;
+    --page-dot: #1c2a40;
+    --surface: #f8fbff;
+    --chrome: #e3ebf6;
+    --accent-start: #2a9bff;
+    --accent-end: #1763c5;
+    --arcade-bg: #172637;
+    --arcade-bg-end: #18233f;
+    --bug-header-start: #1f8c72;
+    --bug-header-end: #1763c5;
+    --bug-board: #e2f4ed;
+    --bug-grid: rgba(23, 99, 197, .16);
+    --bug-shadow: #31776a;
+    --bug-footer: #cfe8e0;
+}
+
+html[data-theme="frutiger-aero"] {
+    --pink: #9a63e8;
+    --pink-dark: #703cc1;
+    --pink-light: #f0e7ff;
+    --purple: #c3a6ff;
+    --purple-light: #f1ecff;
+    --cream: #fffbff;
+    --silver: #e4deed;
+    --silver-dark: #988eaa;
+    --black: #302743;
+    --gray: #71677f;
+    --green: #86dfbd;
+    --border: #302743;
+    --shadow: 5px 5px 0 #bdb0cc;
+    --page-bg: #eee8f5;
+    --page-dot: #fff;
+    --surface: #fff;
+    --chrome: #f3eef8;
+    --accent-start: #b48af3;
+    --accent-end: #764ac5;
+    --arcade-bg: #f7eaff;
+    --arcade-bg-end: #e6dcff;
+    --bug-header-start: #8255c8;
+    --bug-header-end: #b078e5;
+    --bug-board: #fbf5ff;
+    --bug-grid: rgba(132, 86, 202, .15);
+    --bug-shadow: #8c65b6;
+    --bug-footer: #eee0fc;
+}
+
+html[data-theme="minimalist"] {
+    --pink: #59c931;
+    --pink-dark: #328c20;
+    --pink-light: #ecffd9;
+    --purple: #ffe77c;
+    --purple-light: #fff7ca;
+    --cream: #fffef4;
+    --silver: #e5e2c8;
+    --silver-dark: #98956f;
+    --black: #273119;
+    --gray: #58614c;
+    --green: #d2ff30;
+    --border: #273119;
+    --shadow: 5px 5px 0 #9ea173;
+    --page-bg: #e7e5c8;
+    --page-dot: #fffff4;
+    --surface: #fffef4;
+    --chrome: #edebd6;
+    --accent-start: #9cdb31;
+    --accent-end: #4d9d2b;
+    --arcade-bg: #f5ffc7;
+    --arcade-bg-end: #dff4ae;
+    --bug-header-start: #729c1f;
+    --bug-header-end: #4d9d2b;
+    --bug-board: #f8ffdf;
+    --bug-grid: rgba(86, 149, 36, .16);
+    --bug-shadow: #6f8d2a;
+    --bug-footer: #e1efb5;
+
 }
 
 
@@ -53,16 +160,13 @@ body {
 
     color: var(--black);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: var(--body-font);
 
-    background-color: #dedede;
+    background-color: var(--page-bg);
 
     background-image:
         radial-gradient(
-            #ffffff 1px,
+            var(--page-dot) 1px,
             transparent 1px
         );
 
@@ -134,9 +238,9 @@ strong {
     background:
         linear-gradient(
             to bottom,
-            #ff82be 0%,
-            #f73891 45%,
-            #dc1974 100%
+            var(--pink-light) 0%,
+            var(--accent-start) 45%,
+            var(--accent-end) 100%
         );
 
     border-bottom: 2px solid #111;
@@ -253,8 +357,8 @@ strong {
 
     background:
         linear-gradient(
-            #fafafa,
-            #d7d7d7
+            var(--surface),
+            var(--silver)
         );
 
     border-bottom: 2px solid #777;
@@ -363,7 +467,7 @@ strong {
 
     background:
         radial-gradient(
-            #ffd9ea 1px,
+            var(--pink-light) 1px,
             transparent 1px
         );
 
@@ -404,8 +508,8 @@ strong {
     background:
         linear-gradient(
             to right,
-            #f64ca1,
-            #e52788
+            var(--accent-start),
+            var(--accent-end)
         );
 
     font-family: var(--pixel);
@@ -532,8 +636,8 @@ strong {
     background:
         linear-gradient(
             to right,
-            #ff75b8,
-            #e91e87
+            var(--pink),
+            var(--pink-dark)
         );
 
 }
@@ -727,6 +831,56 @@ strong {
 
     color: var(--pink);
 
+}
+
+.hero h1 .async-initials {
+    display: inline;
+    color: var(--pink);
+}
+
+.hero-roles {
+    margin: 12px 0 25px;
+    color: var(--gray);
+    font-family: var(--pixel);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .03em;
+    line-height: 1.6;
+}
+
+.hero-name {
+    margin: -18px 0 0;
+    color: var(--pink-dark);
+    font-family: var(--pixel);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ABOUT ME
+   ========================================================= */
+
+.about-window {
+    background: var(--surface);
+}
+
+.about-content {
+    max-width: 820px;
+    padding: 28px;
+}
+
+.about-content p {
+    margin: 12px 0 0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.hero-roles span {
+    margin: 0 5px;
+    color: var(--pink);
 }
 
 
@@ -980,7 +1134,7 @@ strong {
 
     margin: 18px;
 
-    background: #fff;
+    background: var(--surface);
 
     border: 2px solid #111;
 
@@ -1004,8 +1158,8 @@ strong {
     background:
         linear-gradient(
             to right,
-            #d7b8ff,
-            #f1eaff
+            var(--purple),
+            var(--purple-light)
         );
 
     border-bottom: 2px solid #111;
@@ -1216,12 +1370,12 @@ strong {
    ========================================================= */
 
 .personal-window {
-
-    background:
+    background-color: var(--surface);
+    background-image:
         linear-gradient(
             135deg,
-            #fff,
-            #fff4fa
+            var(--surface),
+            var(--pink-light)
         );
 
 }
@@ -1320,8 +1474,8 @@ strong {
 
     background:
         linear-gradient(
-            #ff9aca,
-            #f13c92
+            var(--pink),
+            var(--pink-dark)
         );
 
     border: 2px solid #111;
@@ -1375,12 +1529,12 @@ strong {
    ========================================================= */
 
 .education-window {
-
-    background:
+    background-color: var(--surface);
+    background-image:
         linear-gradient(
             135deg,
-            #fff,
-            #f8f2ff
+            var(--surface),
+            var(--purple-light)
         );
 
 }
@@ -1863,12 +2017,12 @@ strong {
 
     margin: 30px auto 0;
 
-    background: #fff;
+    background: var(--surface);
 
     border: 3px solid #111;
 
     box-shadow:
-        7px 7px 0 #999;
+        8px 8px 0 #b86b94;
 
     font-family: var(--pixel);
 
@@ -1896,8 +2050,8 @@ strong {
     background:
         linear-gradient(
             to right,
-            #f84aa0,
-            #d91878
+            var(--accent-start),
+            var(--accent-end)
         );
 
     border-bottom: 2px solid #111;
@@ -1930,16 +2084,32 @@ strong {
 
     background:
         radial-gradient(
-            #ffd6e8 1px,
+            var(--pink-light) 1px,
             transparent 1px
         );
 
     background-size: 10px 10px;
 
+    border-top: 1px solid rgba(255, 255, 255, .8);
+
     cursor: default;
 
     user-select: none;
     touch-action: none;
+}
+
+.cat-game-fade {
+    position: absolute;
+    inset: 0;
+    z-index: 30;
+    pointer-events: none;
+    background: #000;
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
+}
+
+.cat-game-fade.is-visible {
+    opacity: 1;
 }
 
 
@@ -2193,7 +2363,7 @@ strong {
 
     color: #555;
 
-    background: #eee;
+    background: linear-gradient(to right, #fff, #f3f3f3);
 
     border-top: 2px solid #111;
 
@@ -2205,6 +2375,270 @@ strong {
     color: var(--pink-dark);
 
     font-size: 11px;
+}
+
+
+/* =========================================================
+   BUG HUNT GAME
+   ========================================================= */
+
+.bug-hunt-section {
+    margin: 0 18px 18px;
+    padding: 38px 45px 45px;
+    background: radial-gradient(circle at top, #fff3b7, #ffe49a);
+    border: 2px dashed #d79c00;
+    text-align: center;
+}
+
+.bug-hunt-window {
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    border: 3px solid #111;
+    box-shadow: 8px 8px 0 #a97c19;
+    font-family: var(--pixel);
+    text-align: left;
+}
+
+.bug-hunt-header {
+    background: linear-gradient(
+        to right,
+        var(--bug-header-start),
+        var(--bug-header-end)
+    );
+}
+
+.bug-hunt-area {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    background-color: var(--bug-board);
+    background-image:
+        linear-gradient(var(--bug-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--bug-grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.bug-hunt-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.bug-target {
+    position: absolute;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    color: inherit;
+    border: 2px solid #111;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 3px 3px 0 var(--bug-shadow);
+    cursor: crosshair;
+    font-size: 28px;
+    transition: transform .1s ease, box-shadow .1s ease;
+    animation: bug-wiggle .7s steps(2, end) infinite;
+}
+
+.bug-target:hover,
+.bug-target:focus-visible {
+    transform: scale(1.15) rotate(12deg);
+    box-shadow: 1px 1px 0 var(--bug-shadow);
+}
+
+.bug-hunt-area.is-playing .bug-hunt-message {
+    display: none;
+}
+
+@keyframes bug-wiggle {
+    50% { rotate: 8deg; }
+}
+
+.bug-hunt-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 12px;
+    background: linear-gradient(to right, var(--surface), var(--bug-footer));
+    border-top: 2px solid #111;
+    font-size: 10px;
+}
+
+.bug-hunt-footer strong {
+    color: var(--pink-dark);
+}
+
+
+/* =========================================================
+   GAME LIBRARY
+   ========================================================= */
+
+.arcade-launcher {
+    margin: 18px;
+    padding: 28px;
+    background: linear-gradient(135deg, var(--arcade-bg), var(--arcade-bg-end));
+    border: 2px dashed var(--pink);
+}
+
+.arcade-shell {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    overflow: hidden;
+    border: 3px solid #111;
+    background: var(--surface);
+    box-shadow: 8px 8px 0 #a97998;
+}
+
+.arcade-menu {
+    padding: 22px 16px;
+    background: var(--pink-light);
+    border-right: 3px solid #111;
+}
+
+.arcade-menu h2 {
+    margin: 18px 0 8px;
+    font-family: var(--pixel);
+    font-size: 22px;
+}
+
+.arcade-menu > p {
+    margin: 0 0 22px;
+    font-family: var(--pixel);
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.arcade-game-list {
+    display: grid;
+    gap: 10px;
+}
+
+.arcade-game-option {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    padding: 12px 10px;
+    color: #333;
+    border: 2px solid #111;
+    background: var(--surface);
+    box-shadow: 3px 3px 0 #aaa;
+    font-family: var(--pixel);
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.arcade-game-option span,
+.arcade-game-option small {
+    color: var(--pink-dark);
+    font-size: 8px;
+}
+
+.arcade-game-option small {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.arcade-game-option:hover,
+.arcade-game-option:focus-visible,
+.arcade-game-option.is-active {
+    color: #fff;
+    background: var(--pink);
+    box-shadow: 3px 3px 0 #111;
+}
+
+.arcade-game-option.is-active span,
+.arcade-game-option.is-active small {
+    color: #fff;
+}
+
+.arcade-game-window {
+    min-width: 0;
+    padding: 18px;
+    background: var(--chrome);
+}
+
+.arcade-panel {
+    display: none;
+}
+
+.arcade-panel.is-active {
+    display: block;
+}
+
+.arcade-panel .cat-game,
+.arcade-panel .bug-hunt-window {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.arcade-panel .cat-game {
+    box-shadow: 6px 6px 0 #b86b94;
+}
+
+@media (max-width: 760px) {
+    .arcade-launcher {
+        margin: 12px;
+        padding: 14px;
+    }
+
+    .arcade-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .arcade-menu {
+        padding: 16px;
+        border-right: 0;
+        border-bottom: 3px solid #111;
+    }
+
+    .arcade-menu h2 {
+        margin: 12px 0 5px;
+        font-size: 19px;
+    }
+
+    .arcade-menu > p {
+        margin-bottom: 14px;
+    }
+
+    .arcade-game-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .arcade-game-option {
+        padding: 9px 8px;
+        font-size: 8px;
+    }
+
+    .arcade-game-window {
+        padding: 12px;
+    }
+
+    .bug-hunt-section {
+        margin: 12px;
+        padding: 28px 15px 32px;
+    }
+
+    .bug-hunt-area {
+        height: 260px;
+    }
+
+    .bug-hunt-footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -2266,8 +2700,8 @@ strong {
     background:
         linear-gradient(
             to right,
-            #f84aa0,
-            #c91370
+            var(--accent-start),
+            var(--accent-end)
         );
 
 }
@@ -2921,6 +3355,911 @@ footer {
             #fff,
             #fff4fa
         );
+}
+
+
+/* =========================================================
+   FULL THEME COMPOSITIONS
+   These are intentionally code-selected, not visitor controls.
+   ========================================================= */
+
+html[data-theme="dark-mode"] {
+    --body-font: "Trebuchet MS", Arial, sans-serif;
+    --pixel: "Courier New", monospace;
+    --cream: #10131a;
+    --surface: #181d27;
+    --chrome: #222a38;
+    --black: #e8f0ff;
+    --gray: #aeb9cb;
+    --border: #64748b;
+    --silver: #283242;
+    --pink-light: #202b3e;
+    --purple-light: #202b3e;
+    --page-bg: #080b11;
+    --page-dot: #182033;
+    --arcade-bg: #101827;
+    --arcade-bg-end: #111827;
+}
+
+html[data-theme="dark-mode"] .browser-window,
+html[data-theme="dark-mode"] .retro-window,
+html[data-theme="dark-mode"] .contact-window,
+html[data-theme="dark-mode"] .window-box,
+html[data-theme="dark-mode"] .meme-card,
+html[data-theme="dark-mode"] .cat-game,
+html[data-theme="dark-mode"] .bug-hunt-window,
+html[data-theme="dark-mode"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+}
+
+html[data-theme="dark-mode"] .sidebar,
+html[data-theme="dark-mode"] .menu-bar,
+html[data-theme="dark-mode"] .toolbar,
+html[data-theme="dark-mode"] .toolbar-status,
+html[data-theme="dark-mode"] .arcade-game-window,
+html[data-theme="dark-mode"] .cat-game-footer,
+html[data-theme="dark-mode"] .bug-hunt-footer {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="dark-mode"] .personal-window,
+html[data-theme="dark-mode"] .education-window {
+    background: var(--surface);
+}
+
+html[data-theme="dark-mode"] .window-title,
+html[data-theme="dark-mode"] .arcade-menu {
+    color: var(--black);
+    background: #202b3e;
+}
+
+html[data-theme="dark-mode"] .content {
+    background-image: radial-gradient(#293751 1px, transparent 1px);
+}
+
+html[data-theme="frutiger-aero"] {
+    --body-font: "Trebuchet MS", Verdana, sans-serif;
+    --pixel: "Trebuchet MS", Verdana, sans-serif;
+    --pink: #22a9db;
+    --pink-dark: #0873b6;
+    --pink-light: #dcf7ff;
+    --purple: #8ee0ff;
+    --purple-light: #e9fbff;
+    --black: #10415b;
+    --gray: #39718c;
+    --border: #57a7ca;
+    --page-bg: #bdeeff;
+    --page-dot: rgba(255, 255, 255, .7);
+    --surface: rgba(255, 255, 255, .9);
+    --chrome: #d9f6ff;
+    --accent-start: #52d5ff;
+    --accent-end: #0788ca;
+    --arcade-bg: #c8f7ff;
+    --arcade-bg-end: #a5d7ff;
+}
+
+html[data-theme="frutiger-aero"] body {
+    background-image:
+        radial-gradient(circle at 15% 10%, rgba(255, 255, 255, .9) 0 3px, transparent 4px),
+        linear-gradient(180deg, #71d5f4, #d4f8ff 45%, #8adf89 100%);
+    background-size: 42px 42px, auto;
+}
+
+html[data-theme="frutiger-aero"] .browser-window {
+    border-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(19, 113, 154, .35);
+}
+
+html[data-theme="frutiger-aero"] .title-bar {
+    border-bottom-color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+html[data-theme="frutiger-aero"] .retro-window,
+html[data-theme="frutiger-aero"] .contact-window,
+html[data-theme="frutiger-aero"] .window-box,
+html[data-theme="frutiger-aero"] .meme-card,
+html[data-theme="frutiger-aero"] .cat-game,
+html[data-theme="frutiger-aero"] .bug-hunt-window,
+html[data-theme="frutiger-aero"] .arcade-shell {
+    border-color: #79c9e7;
+    border-radius: 14px;
+    box-shadow: 0 10px 22px rgba(28, 126, 164, .23);
+}
+
+html[data-theme="frutiger-aero"] .window-title,
+html[data-theme="frutiger-aero"] .mini-title,
+html[data-theme="frutiger-aero"] .cat-game-header,
+html[data-theme="frutiger-aero"] .bug-hunt-header {
+    border-bottom-color: rgba(255, 255, 255, .8);
+}
+
+html[data-theme="frutiger-aero"] .arcade-launcher {
+    border-color: #fff;
+    border-radius: 20px;
+}
+
+html[data-theme="minimalist"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: Arial, Helvetica, sans-serif;
+    --pink: #111;
+    --pink-dark: #111;
+    --pink-light: #f1f1f1;
+    --purple: #e9e9e9;
+    --purple-light: #f7f7f7;
+    --black: #111;
+    --gray: #666;
+    --border: #d6d6d6;
+    --page-bg: #fff;
+    --page-dot: #fff;
+    --surface: #fff;
+    --chrome: #fafafa;
+    --accent-start: #222;
+    --accent-end: #222;
+    --arcade-bg: #fff;
+    --arcade-bg-end: #fff;
+}
+
+html[data-theme="minimalist"] .sidebar {
+    display: none;
+}
+
+html[data-theme="minimalist"] .desktop-layout {
+    grid-template-columns: 1fr;
+}
+
+html[data-theme="minimalist"] .title-bar,
+html[data-theme="minimalist"] .cat-game-header,
+html[data-theme="minimalist"] .bug-hunt-header,
+html[data-theme="minimalist"] .mini-title,
+html[data-theme="minimalist"] .pink-title {
+    color: #111;
+    background: #fff;
+    border-color: #111;
+}
+
+html[data-theme="minimalist"] .retro-window,
+html[data-theme="minimalist"] .contact-window,
+html[data-theme="minimalist"] .window-box,
+html[data-theme="minimalist"] .meme-card,
+html[data-theme="minimalist"] .cat-game,
+html[data-theme="minimalist"] .bug-hunt-window,
+html[data-theme="minimalist"] .arcade-shell,
+html[data-theme="minimalist"] .arcade-launcher {
+    border-color: #dedede;
+    box-shadow: none;
+}
+
+html[data-theme="minimalist"] .arcade-launcher,
+html[data-theme="minimalist"] .cat-break {
+    border-style: solid;
+}
+
+html[data-theme="minimalist"] .toolbar,
+html[data-theme="minimalist"] .menu-bar,
+html[data-theme="minimalist"] .arcade-menu,
+html[data-theme="minimalist"] .arcade-game-window {
+    background: #fff;
+}
+
+html[data-theme="minimalist"] .content,
+html[data-theme="minimalist"] body {
+    background-image: none;
+}
+
+html[data-theme="starry-night"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: Georgia, "Times New Roman", serif;
+    --pink: #e6bf50;
+    --pink-dark: #be8a24;
+    --pink-light: #273a71;
+    --purple: #4f71bf;
+    --purple-light: #243763;
+    --cream: #101d43;
+    --silver: #253869;
+    --silver-dark: #7590ca;
+    --black: #f8edc5;
+    --gray: #c7cce4;
+    --border: #d6b253;
+    --page-bg: #071333;
+    --page-dot: #f9df85;
+    --surface: #132756;
+    --chrome: #1e3263;
+    --accent-start: #4167bf;
+    --accent-end: #1b367c;
+    --arcade-bg: #172e64;
+    --arcade-bg-end: #0c1c4a;
+    --bug-header-start: #3159aa;
+    --bug-header-end: #182f70;
+    --bug-board: #172b5b;
+    --bug-grid: rgba(230, 191, 80, .2);
+    --bug-shadow: #a97921;
+    --bug-footer: #203d76;
+}
+
+html[data-theme="starry-night"] body {
+    background-image:
+        radial-gradient(circle at 15% 20%, #ffe786 0 1px, transparent 2px),
+        radial-gradient(circle at 75% 35%, #fff2ad 0 1px, transparent 2px),
+        radial-gradient(circle at 40% 80%, #fff2ad 0 1px, transparent 2px),
+        linear-gradient(135deg, #071333, #17346f 60%, #071333);
+    background-size: 83px 97px, 137px 113px, 167px 151px, auto;
+}
+
+html[data-theme="starry-night"] .browser-window,
+html[data-theme="starry-night"] .retro-window,
+html[data-theme="starry-night"] .contact-window,
+html[data-theme="starry-night"] .window-box,
+html[data-theme="starry-night"] .meme-card,
+html[data-theme="starry-night"] .cat-game,
+html[data-theme="starry-night"] .bug-hunt-window,
+html[data-theme="starry-night"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 5px 7px 0 #071333;
+}
+
+html[data-theme="starry-night"] .sidebar,
+html[data-theme="starry-night"] .menu-bar,
+html[data-theme="starry-night"] .toolbar,
+html[data-theme="starry-night"] .arcade-game-window,
+html[data-theme="starry-night"] .cat-game-footer,
+html[data-theme="starry-night"] .bug-hunt-footer {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="starry-night"] .personal-window,
+html[data-theme="starry-night"] .education-window,
+html[data-theme="starry-night"] .arcade-menu {
+    color: var(--black);
+    background: #1a3061;
+}
+
+html[data-theme="starry-night"] .window-title {
+    color: #1b2140;
+    background: linear-gradient(to right, #e6bf50, #f6df8d);
+}
+
+html[data-theme="starry-night"] .content {
+    background-image: radial-gradient(#e6bf50 1px, transparent 1px);
+}
+
+/* Shared contrast repairs for themes with dark surfaces. */
+html[data-theme="dark-mode"] .mini-title b,
+html[data-theme="dark-mode"] .terminal-header,
+html[data-theme="dark-mode"] .caption,
+html[data-theme="dark-mode"] .tiny-note,
+html[data-theme="dark-mode"] .arcade-game-option,
+html[data-theme="dark-mode"] .contact-button,
+html[data-theme="starry-night"] .mini-title b,
+html[data-theme="starry-night"] .terminal-header,
+html[data-theme="starry-night"] .caption,
+html[data-theme="starry-night"] .tiny-note,
+html[data-theme="starry-night"] .arcade-game-option,
+html[data-theme="starry-night"] .contact-button {
+    color: var(--black);
+    background: var(--chrome);
+    border-color: var(--border);
+}
+
+html[data-theme="dark-mode"] .cat-status,
+html[data-theme="starry-night"] .cat-status {
+    color: #111;
+    background: #fff;
+}
+
+html[data-theme="cyberpunk-neon"] {
+    --body-font: "Trebuchet MS", Arial, sans-serif;
+    --pixel: "Courier New", monospace;
+    --pink: #ff39d1;
+    --pink-dark: #c71a9e;
+    --pink-light: #31113f;
+    --purple: #8f56ff;
+    --purple-light: #27184e;
+    --cream: #100b1d;
+    --silver: #241d37;
+    --silver-dark: #8b78a8;
+    --black: #f8f3ff;
+    --gray: #d0c4e0;
+    --green: #34f6d3;
+    --border: #ff64dc;
+    --page-bg: #07030d;
+    --page-dot: #2c1743;
+    --surface: #170d29;
+    --chrome: #24143d;
+    --accent-start: #ff39d1;
+    --accent-end: #6e38ff;
+    --arcade-bg: #1d0d36;
+    --arcade-bg-end: #0c203b;
+    --bug-header-start: #ff39d1;
+    --bug-header-end: #6e38ff;
+    --bug-board: #190f30;
+    --bug-grid: rgba(52, 246, 211, .19);
+    --bug-shadow: #34f6d3;
+    --bug-footer: #251546;
+}
+
+html[data-theme="cyberpunk-neon"] body {
+    background-image:
+        linear-gradient(rgba(52, 246, 211, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 246, 211, .06) 1px, transparent 1px),
+        radial-gradient(circle at top, #32104f, #07030d 60%);
+    background-size: 30px 30px, 30px 30px, auto;
+}
+
+html[data-theme="cyberpunk-neon"] .browser-window,
+html[data-theme="cyberpunk-neon"] .retro-window,
+html[data-theme="cyberpunk-neon"] .contact-window,
+html[data-theme="cyberpunk-neon"] .window-box,
+html[data-theme="cyberpunk-neon"] .meme-card,
+html[data-theme="cyberpunk-neon"] .cat-game,
+html[data-theme="cyberpunk-neon"] .bug-hunt-window,
+html[data-theme="cyberpunk-neon"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 0 16px rgba(255, 57, 209, .35);
+}
+
+html[data-theme="cyberpunk-neon"] .sidebar,
+html[data-theme="cyberpunk-neon"] .menu-bar,
+html[data-theme="cyberpunk-neon"] .toolbar,
+html[data-theme="cyberpunk-neon"] .arcade-game-window,
+html[data-theme="cyberpunk-neon"] .cat-game-footer,
+html[data-theme="cyberpunk-neon"] .bug-hunt-footer,
+html[data-theme="cyberpunk-neon"] .personal-window,
+html[data-theme="cyberpunk-neon"] .education-window,
+html[data-theme="cyberpunk-neon"] .arcade-menu {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="cyberpunk-neon"] .window-title,
+html[data-theme="cyberpunk-neon"] .mini-title {
+    color: #fff;
+    background: linear-gradient(to right, #6e38ff, #ff39d1);
+}
+
+html[data-theme="cyberpunk-neon"] .content {
+    background-image: radial-gradient(#34f6d3 1px, transparent 1px);
+}
+
+html[data-theme="cyberpunk-neon"] .mini-title b,
+html[data-theme="cyberpunk-neon"] .terminal-header,
+html[data-theme="cyberpunk-neon"] .caption,
+html[data-theme="cyberpunk-neon"] .tiny-note,
+html[data-theme="cyberpunk-neon"] .arcade-game-option,
+html[data-theme="cyberpunk-neon"] .contact-button {
+    color: var(--black);
+    background: var(--chrome);
+    border-color: var(--border);
+}
+
+html[data-theme="soft-editorial"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: Georgia, "Times New Roman", serif;
+    --pink: #a94b57;
+    --pink-dark: #7d303d;
+    --pink-light: #f7e8e4;
+    --purple: #d4b87a;
+    --purple-light: #f5eddb;
+    --cream: #fbf8f1;
+    --silver: #e9e2d5;
+    --silver-dark: #968c7f;
+    --black: #28241f;
+    --gray: #665e55;
+    --border: #b9aa97;
+    --page-bg: #e9dfd0;
+    --page-dot: #fbf8f1;
+    --surface: #fffdf8;
+    --chrome: #f5eee3;
+    --accent-start: #c97472;
+    --accent-end: #97414d;
+    --arcade-bg: #f5e7dc;
+    --arcade-bg-end: #e9d8c0;
+    --bug-header-start: #9b6260;
+    --bug-header-end: #c2915f;
+    --bug-board: #fffaf0;
+    --bug-grid: rgba(169, 75, 87, .14);
+    --bug-shadow: #af8e6d;
+    --bug-footer: #f2e1ca;
+}
+
+html[data-theme="soft-editorial"] .title-bar,
+html[data-theme="soft-editorial"] .cat-game-header,
+html[data-theme="soft-editorial"] .bug-hunt-header {
+    letter-spacing: .06em;
+}
+
+html[data-theme="soft-editorial"] .retro-window,
+html[data-theme="soft-editorial"] .contact-window,
+html[data-theme="soft-editorial"] .window-box,
+html[data-theme="soft-editorial"] .meme-card,
+html[data-theme="soft-editorial"] .cat-game,
+html[data-theme="soft-editorial"] .bug-hunt-window,
+html[data-theme="soft-editorial"] .arcade-shell {
+    border-color: var(--border);
+    box-shadow: 3px 5px 0 rgba(92, 69, 51, .16);
+}
+
+html[data-theme="soft-editorial"] .window-title {
+    background: linear-gradient(to right, #eadbbf, #f8f2e7);
+}
+
+html[data-theme="ocean-breeze"] {
+    --body-font: Verdana, Arial, sans-serif;
+    --pixel: Verdana, Arial, sans-serif;
+    --pink: #147fa8;
+    --pink-dark: #0b5777;
+    --pink-light: #d9f1f5;
+    --purple: #9ad8de;
+    --purple-light: #e4f7f7;
+    --cream: #f5fcfc;
+    --silver: #d7ecec;
+    --silver-dark: #75a8ad;
+    --black: #163d49;
+    --gray: #47727b;
+    --border: #69abb4;
+    --page-bg: #bde5e5;
+    --page-dot: #eaffff;
+    --surface: #f9ffff;
+    --chrome: #e1f3f3;
+    --accent-start: #32abc4;
+    --accent-end: #177b9c;
+    --arcade-bg: #d8f5f3;
+    --arcade-bg-end: #addce2;
+    --bug-header-start: #2e9db5;
+    --bug-header-end: #19799b;
+    --bug-board: #f0ffff;
+    --bug-grid: rgba(20, 127, 168, .15);
+    --bug-shadow: #5cabb5;
+    --bug-footer: #d4eeee;
+}
+
+html[data-theme="ocean-breeze"] body {
+    background-image: linear-gradient(165deg, #a8e2e8, #f5ffff 48%, #a3d9d2);
+}
+
+html[data-theme="ocean-breeze"] .browser-window,
+html[data-theme="ocean-breeze"] .retro-window,
+html[data-theme="ocean-breeze"] .contact-window,
+html[data-theme="ocean-breeze"] .window-box,
+html[data-theme="ocean-breeze"] .meme-card,
+html[data-theme="ocean-breeze"] .cat-game,
+html[data-theme="ocean-breeze"] .bug-hunt-window,
+html[data-theme="ocean-breeze"] .arcade-shell {
+    border-color: #88c8cd;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(33, 113, 128, .2);
+}
+
+html[data-theme="ocean-breeze"] .sidebar {
+    background: #d1eeee;
+}
+
+html[data-theme="windows-98"] {
+    --body-font: Tahoma, Arial, sans-serif;
+    --pixel: "MS Sans Serif", Tahoma, sans-serif;
+    --pink: #000080;
+    --pink-dark: #000080;
+    --pink-light: #d7e5f6;
+    --purple: #b8c8dc;
+    --purple-light: #e7edf5;
+    --cream: #c0c0c0;
+    --silver: #c0c0c0;
+    --silver-dark: #808080;
+    --black: #000;
+    --gray: #404040;
+    --border: #000;
+    --page-bg: #008080;
+    --page-dot: #008080;
+    --surface: #fff;
+    --chrome: #c0c0c0;
+    --accent-start: #000080;
+    --accent-end: #000080;
+    --arcade-bg: #c0c0c0;
+    --arcade-bg-end: #c0c0c0;
+    --bug-header-start: #000080;
+    --bug-header-end: #000080;
+    --bug-board: #fff;
+    --bug-grid: rgba(0, 0, 128, .13);
+    --bug-shadow: #808080;
+    --bug-footer: #c0c0c0;
+}
+
+html[data-theme="windows-98"] body,
+html[data-theme="windows-98"] .content {
+    background-image: none;
+}
+
+html[data-theme="windows-98"] .browser-window {
+    margin: 8px auto;
+    border: 2px outset #fff;
+    box-shadow: none;
+}
+
+html[data-theme="windows-98"] .retro-window,
+html[data-theme="windows-98"] .contact-window,
+html[data-theme="windows-98"] .window-box,
+html[data-theme="windows-98"] .meme-card,
+html[data-theme="windows-98"] .cat-game,
+html[data-theme="windows-98"] .bug-hunt-window,
+html[data-theme="windows-98"] .arcade-shell {
+    border: 2px outset #fff;
+    box-shadow: none;
+}
+
+html[data-theme="windows-98"] .title-bar,
+html[data-theme="windows-98"] .mini-title,
+html[data-theme="windows-98"] .window-title,
+html[data-theme="windows-98"] .cat-game-header,
+html[data-theme="windows-98"] .bug-hunt-header {
+    color: #fff;
+    background: #000080;
+}
+
+html[data-theme="windows-98"] .scratch-button,
+html[data-theme="windows-98"] .retro-button,
+html[data-theme="windows-98"] .contact-button {
+    color: #000;
+    background: #c0c0c0;
+    border: 2px outset #fff;
+    box-shadow: none;
+}
+
+html[data-theme="gameboy"] {
+    --body-font: "Courier New", monospace;
+    --pixel: "Courier New", monospace;
+    --pink: #38583a;
+    --pink-dark: #243b2a;
+    --pink-light: #c5d5a3;
+    --purple: #a8bc83;
+    --purple-light: #dce8bd;
+    --cream: #e5efc7;
+    --silver: #b6c993;
+    --silver-dark: #60734d;
+    --black: #1e3426;
+    --gray: #496142;
+    --border: #38583a;
+    --page-bg: #9eaf7c;
+    --page-dot: #b9ca98;
+    --surface: #edf5d1;
+    --chrome: #cedcac;
+    --accent-start: #5e7b4f;
+    --accent-end: #38583a;
+    --arcade-bg: #c5d5a3;
+    --arcade-bg-end: #aabf82;
+    --bug-header-start: #506d47;
+    --bug-header-end: #38583a;
+    --bug-board: #eaf4cb;
+    --bug-grid: rgba(56, 88, 58, .18);
+    --bug-shadow: #6a8055;
+    --bug-footer: #c9d9a4;
+}
+
+html[data-theme="gameboy"] body {
+    image-rendering: pixelated;
+}
+
+html[data-theme="gameboy"] .browser-window,
+html[data-theme="gameboy"] .retro-window,
+html[data-theme="gameboy"] .contact-window,
+html[data-theme="gameboy"] .window-box,
+html[data-theme="gameboy"] .meme-card,
+html[data-theme="gameboy"] .cat-game,
+html[data-theme="gameboy"] .bug-hunt-window,
+html[data-theme="gameboy"] .arcade-shell {
+    border-color: var(--border);
+    border-radius: 0;
+    box-shadow: 4px 4px 0 #60734d;
+}
+
+html[data-theme="gameboy"] .title-bar,
+html[data-theme="gameboy"] .mini-title,
+html[data-theme="gameboy"] .window-title,
+html[data-theme="gameboy"] .cat-game-header,
+html[data-theme="gameboy"] .bug-hunt-header {
+    color: #edf5d1;
+}
+
+html[data-theme="synthwave-arcade"] {
+    --body-font: "Trebuchet MS", Arial, sans-serif;
+    --pixel: "Courier New", monospace;
+    --pink: #ff4fc3;
+    --pink-dark: #d3199b;
+    --pink-light: #321047;
+    --purple: #8e67ff;
+    --purple-light: #26174f;
+    --cream: #150b2c;
+    --silver: #261849;
+    --silver-dark: #aa8bd2;
+    --black: #fff1fc;
+    --gray: #dac7ee;
+    --border: #ff83d8;
+    --page-bg: #11001f;
+    --page-dot: #3b1756;
+    --surface: #1e103a;
+    --chrome: #2a1850;
+    --accent-start: #ff4fc3;
+    --accent-end: #7a4dff;
+    --arcade-bg: #30104e;
+    --arcade-bg-end: #071c46;
+    --bug-header-start: #ff4fc3;
+    --bug-header-end: #7a4dff;
+    --bug-board: #21113f;
+    --bug-grid: rgba(84, 239, 255, .2);
+    --bug-shadow: #54efff;
+    --bug-footer: #311a5b;
+}
+
+html[data-theme="synthwave-arcade"] body {
+    background-image:
+        linear-gradient(rgba(84, 239, 255, .1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(84, 239, 255, .1) 1px, transparent 1px),
+        linear-gradient(#210039, #11001f 62%);
+    background-size: 36px 36px, 36px 36px, auto;
+}
+
+html[data-theme="synthwave-arcade"] .browser-window,
+html[data-theme="synthwave-arcade"] .retro-window,
+html[data-theme="synthwave-arcade"] .contact-window,
+html[data-theme="synthwave-arcade"] .window-box,
+html[data-theme="synthwave-arcade"] .meme-card,
+html[data-theme="synthwave-arcade"] .cat-game,
+html[data-theme="synthwave-arcade"] .bug-hunt-window,
+html[data-theme="synthwave-arcade"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 0 15px rgba(255, 79, 195, .4);
+}
+
+html[data-theme="synthwave-arcade"] .sidebar,
+html[data-theme="synthwave-arcade"] .menu-bar,
+html[data-theme="synthwave-arcade"] .toolbar,
+html[data-theme="synthwave-arcade"] .arcade-game-window,
+html[data-theme="synthwave-arcade"] .cat-game-footer,
+html[data-theme="synthwave-arcade"] .bug-hunt-footer,
+html[data-theme="synthwave-arcade"] .personal-window,
+html[data-theme="synthwave-arcade"] .education-window,
+html[data-theme="synthwave-arcade"] .arcade-menu {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="synthwave-arcade"] .window-title,
+html[data-theme="synthwave-arcade"] .mini-title {
+    color: #fff;
+    background: linear-gradient(to right, #7a4dff, #ff4fc3);
+}
+
+html[data-theme="synthwave-arcade"] .mini-title b,
+html[data-theme="synthwave-arcade"] .terminal-header,
+html[data-theme="synthwave-arcade"] .caption,
+html[data-theme="synthwave-arcade"] .tiny-note,
+html[data-theme="synthwave-arcade"] .arcade-game-option,
+html[data-theme="synthwave-arcade"] .contact-button {
+    color: var(--black);
+    background: var(--chrome);
+    border-color: var(--border);
+}
+
+/* Make Cyberpunk angular and acid-toned; Synthwave remains the pink sunset theme. */
+html[data-theme="cyberpunk-neon"] {
+    --pink: #48ffd3;
+    --pink-dark: #0abf9d;
+    --pink-light: #0e2d32;
+    --purple: #7aff39;
+    --purple-light: #17331b;
+    --border: #48ffd3;
+    --accent-start: #48ffd3;
+    --accent-end: #7aff39;
+    --bug-header-start: #0abf9d;
+    --bug-header-end: #527d16;
+}
+
+html[data-theme="cyberpunk-neon"] .window-title,
+html[data-theme="cyberpunk-neon"] .mini-title {
+    color: #061313;
+    background: linear-gradient(to right, #48ffd3, #7aff39);
+}
+
+html[data-theme="cyberpunk-neon"] .browser-window,
+html[data-theme="cyberpunk-neon"] .retro-window,
+html[data-theme="cyberpunk-neon"] .contact-window,
+html[data-theme="cyberpunk-neon"] .window-box,
+html[data-theme="cyberpunk-neon"] .meme-card,
+html[data-theme="cyberpunk-neon"] .cat-game,
+html[data-theme="cyberpunk-neon"] .bug-hunt-window,
+html[data-theme="cyberpunk-neon"] .arcade-shell {
+    border-radius: 0;
+    box-shadow: 0 0 13px rgba(72, 255, 211, .28);
+}
+
+/* Ocean is calm and flat; Frutiger Aero remains the glossy, rounded option. */
+html[data-theme="ocean-breeze"] .browser-window,
+html[data-theme="ocean-breeze"] .retro-window,
+html[data-theme="ocean-breeze"] .contact-window,
+html[data-theme="ocean-breeze"] .window-box,
+html[data-theme="ocean-breeze"] .meme-card,
+html[data-theme="ocean-breeze"] .cat-game,
+html[data-theme="ocean-breeze"] .bug-hunt-window,
+html[data-theme="ocean-breeze"] .arcade-shell {
+    border-radius: 0;
+    box-shadow: 4px 5px 0 rgba(27, 111, 121, .18);
+}
+
+html[data-theme="futuristic-ui"] {
+    --body-font: Inter, ui-sans-serif, system-ui, sans-serif;
+    --pixel: Inter, ui-sans-serif, system-ui, sans-serif;
+    --pink: #72e8ff;
+    --pink-dark: #3396e8;
+    --pink-light: rgba(114, 232, 255, .13);
+    --purple: #9b8cff;
+    --purple-light: rgba(155, 140, 255, .14);
+    --cream: #0b1220;
+    --silver: #1e2a3e;
+    --silver-dark: #6c84a5;
+    --black: #edf6ff;
+    --gray: #b1c3d9;
+    --border: rgba(150, 220, 255, .38);
+    --page-bg: #040913;
+    --page-dot: #142440;
+    --surface: rgba(14, 28, 49, .84);
+    --chrome: rgba(30, 49, 78, .82);
+    --accent-start: #68dfff;
+    --accent-end: #7167f7;
+    --arcade-bg: #0d1c34;
+    --arcade-bg-end: #18183d;
+    --bug-header-start: #3cbce8;
+    --bug-header-end: #695fe7;
+    --bug-board: #10233c;
+    --bug-grid: rgba(114, 232, 255, .15);
+    --bug-shadow: #3a92c7;
+    --bug-footer: #182d4b;
+}
+
+html[data-theme="futuristic-ui"] body {
+    background-image:
+        radial-gradient(circle at 20% 0, rgba(94, 214, 255, .18), transparent 28%),
+        radial-gradient(circle at 85% 80%, rgba(124, 103, 247, .19), transparent 30%),
+        linear-gradient(135deg, #040913, #0b1630 55%, #080c1d);
+}
+
+html[data-theme="futuristic-ui"] .browser-window,
+html[data-theme="futuristic-ui"] .retro-window,
+html[data-theme="futuristic-ui"] .contact-window,
+html[data-theme="futuristic-ui"] .window-box,
+html[data-theme="futuristic-ui"] .meme-card,
+html[data-theme="futuristic-ui"] .cat-game,
+html[data-theme="futuristic-ui"] .bug-hunt-window,
+html[data-theme="futuristic-ui"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .32);
+    backdrop-filter: blur(16px);
+}
+
+html[data-theme="futuristic-ui"] .sidebar,
+html[data-theme="futuristic-ui"] .menu-bar,
+html[data-theme="futuristic-ui"] .toolbar,
+html[data-theme="futuristic-ui"] .arcade-game-window,
+html[data-theme="futuristic-ui"] .cat-game-footer,
+html[data-theme="futuristic-ui"] .bug-hunt-footer,
+html[data-theme="futuristic-ui"] .personal-window,
+html[data-theme="futuristic-ui"] .education-window,
+html[data-theme="futuristic-ui"] .arcade-menu {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="futuristic-ui"] .title-bar,
+html[data-theme="futuristic-ui"] .window-title,
+html[data-theme="futuristic-ui"] .mini-title,
+html[data-theme="futuristic-ui"] .cat-game-header,
+html[data-theme="futuristic-ui"] .bug-hunt-header {
+    color: #fff;
+    background: linear-gradient(105deg, #267bc2, #685ee8);
+}
+
+html[data-theme="futuristic-ui"] .mini-title b,
+html[data-theme="futuristic-ui"] .terminal-header,
+html[data-theme="futuristic-ui"] .caption,
+html[data-theme="futuristic-ui"] .tiny-note,
+html[data-theme="futuristic-ui"] .arcade-game-option,
+html[data-theme="futuristic-ui"] .contact-button {
+    color: var(--black);
+    background: var(--chrome);
+    border-color: var(--border);
+}
+
+html[data-theme="modern-studio"] {
+    --body-font: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --pixel: Inter, ui-sans-serif, system-ui, sans-serif;
+    --pink: #2563eb;
+    --pink-dark: #1d4ed8;
+    --pink-light: #e8efff;
+    --purple: #d5e2ff;
+    --purple-light: #f3f6ff;
+    --cream: #fff;
+    --silver: #e6eaf0;
+    --silver-dark: #8793a5;
+    --black: #182230;
+    --gray: #5d6b7d;
+    --border: #dbe2ea;
+    --page-bg: #f4f6f9;
+    --page-dot: #f4f6f9;
+    --surface: #fff;
+    --chrome: #f8fafc;
+    --accent-start: #3b82f6;
+    --accent-end: #2563eb;
+    --arcade-bg: #eef4ff;
+    --arcade-bg-end: #f9fbff;
+    --bug-header-start: #3b82f6;
+    --bug-header-end: #2563eb;
+    --bug-board: #f8fbff;
+    --bug-grid: rgba(37, 99, 235, .1);
+    --bug-shadow: #b8c6df;
+    --bug-footer: #f1f5f9;
+}
+
+html[data-theme="modern-studio"] .sidebar {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+html[data-theme="modern-studio"] .desktop-layout {
+    grid-template-columns: 1fr;
+}
+
+html[data-theme="modern-studio"] .browser-window {
+    width: min(1240px, calc(100% - 40px));
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+html[data-theme="modern-studio"] .title-bar,
+html[data-theme="modern-studio"] .menu-bar {
+    display: none;
+}
+
+html[data-theme="modern-studio"] .toolbar {
+    margin-bottom: 20px;
+    padding: 12px 4px;
+    background: transparent;
+    border: 0;
+}
+
+html[data-theme="modern-studio"] .retro-window,
+html[data-theme="modern-studio"] .contact-window,
+html[data-theme="modern-studio"] .window-box,
+html[data-theme="modern-studio"] .meme-card,
+html[data-theme="modern-studio"] .cat-game,
+html[data-theme="modern-studio"] .bug-hunt-window,
+html[data-theme="modern-studio"] .arcade-shell {
+    border-color: var(--border);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(24, 34, 48, .07);
+}
+
+html[data-theme="modern-studio"] .window-title,
+html[data-theme="modern-studio"] .mini-title {
+    color: var(--black);
+    background: var(--chrome);
+    border-bottom-color: var(--border);
 }
 
 .disclaimer-content {
