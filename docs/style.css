@@ -4479,3 +4479,1399 @@ html[data-theme="modern-studio"] .mini-title {
     }
 
 }
+/* =========================================================
+   01. COTTAGECORE
+   Botanical journal / countryside study
+   ========================================================= */
+
+html[data-theme="cottagecore"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #a65f5f;
+    --pink-dark: #7d4545;
+    --pink-light: #f3e3d8;
+    --purple: #9a9b72;
+    --purple-light: #e8e8d2;
+
+    --cream: #faf6e9;
+    --silver: #ded8c6;
+    --silver-dark: #9b9583;
+
+    --black: #34382c;
+    --gray: #6d705e;
+    --border: #9a927b;
+
+    --page-bg: #dfe4cc;
+    --page-dot: rgba(255,255,255,.55);
+    --surface: #fffaf0;
+    --chrome: #eee9d8;
+
+    --accent-start: #899b6b;
+    --accent-end: #64794e;
+
+    --arcade-bg: #eee8d1;
+    --arcade-bg-end: #dce3c4;
+    --bug-header-start: #8b8060;
+    --bug-header-end: #6f7f57;
+    --bug-board: #f7f0d8;
+    --bug-grid: rgba(104,116,77,.14);
+    --bug-shadow: #8b8060;
+    --bug-footer: #e7e0c8;
+}
+
+html[data-theme="cottagecore"] body {
+    background:
+        radial-gradient(circle at 15% 15%, rgba(255,255,255,.6) 0 2px, transparent 3px),
+        linear-gradient(135deg, #dfe5cd, #f3eedc 50%, #d7dfc2);
+    background-size: 90px 90px, auto;
+}
+
+html[data-theme="cottagecore"] .browser-window,
+html[data-theme="cottagecore"] .retro-window,
+html[data-theme="cottagecore"] .contact-window,
+html[data-theme="cottagecore"] .window-box,
+html[data-theme="cottagecore"] .meme-card,
+html[data-theme="cottagecore"] .cat-game,
+html[data-theme="cottagecore"] .bug-hunt-window,
+html[data-theme="cottagecore"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 4px 5px 0 rgba(91,94,69,.18);
+}
+
+html[data-theme="cottagecore"] .sidebar,
+html[data-theme="cottagecore"] .menu-bar,
+html[data-theme="cottagecore"] .toolbar,
+html[data-theme="cottagecore"] .arcade-game-window,
+html[data-theme="cottagecore"] .cat-game-footer,
+html[data-theme="cottagecore"] .bug-hunt-footer {
+    color: var(--black);
+    background: var(--chrome);
+}
+
+html[data-theme="cottagecore"] .title-bar,
+html[data-theme="cottagecore"] .cat-game-header,
+html[data-theme="cottagecore"] .bug-hunt-header {
+    color: #fffaf0;
+    background: linear-gradient(to right, #899b6b, #697c53);
+}
+
+html[data-theme="cottagecore"] .window-title {
+    color: var(--black);
+    background: linear-gradient(to right, #e3e2c7, #f4efdc);
+}
+
+html[data-theme="cottagecore"] .mini-title,
+html[data-theme="cottagecore"] .pink-title {
+    color: var(--black);
+    background: #eee8d7;
+}
+
+html[data-theme="cottagecore"] .content {
+    background-image: radial-gradient(#dfe2c9 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+html[data-theme="cottagecore"] .terminal {
+    color: #d7e6ae;
+    background: #283025;
+    border-color: #59614d;
+}
+
+html[data-theme="cottagecore"] footer {
+    color: #e2e9d2;
+    background: #3f4937;
+}
+
+
+/* =========================================================
+   02. SWISS / INTERNATIONAL
+   Strict grid / graphic design / editorial
+   ========================================================= */
+
+html[data-theme="swiss"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #e3262e;
+    --pink-dark: #b51219;
+    --pink-light: #fbe9e9;
+    --purple: #e5e5e5;
+    --purple-light: #f3f3f3;
+
+    --cream: #f7f7f5;
+    --silver: #e9e9e7;
+    --silver-dark: #777;
+
+    --black: #111;
+    --gray: #555;
+    --border: #1b1b1b;
+
+    --page-bg: #e8e8e5;
+    --page-dot: #f7f7f5;
+    --surface: #fff;
+    --chrome: #efefed;
+
+    --accent-start: #e3262e;
+    --accent-end: #b51219;
+
+    --arcade-bg: #f4f4f2;
+    --arcade-bg-end: #fff;
+    --bug-header-start: #e3262e;
+    --bug-header-end: #b51219;
+    --bug-board: #fff;
+    --bug-grid: rgba(0,0,0,.08);
+    --bug-shadow: #222;
+    --bug-footer: #e5e5e3;
+}
+
+html[data-theme="swiss"] body {
+    background:
+        linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,.035) 1px, transparent 1px),
+        #e8e8e5;
+    background-size: 32px 32px;
+}
+
+html[data-theme="swiss"] .browser-window {
+    border: 2px solid #111;
+    box-shadow: 10px 10px 0 #111;
+}
+
+html[data-theme="swiss"] .retro-window,
+html[data-theme="swiss"] .contact-window,
+html[data-theme="swiss"] .window-box,
+html[data-theme="swiss"] .meme-card,
+html[data-theme="swiss"] .cat-game,
+html[data-theme="swiss"] .bug-hunt-window,
+html[data-theme="swiss"] .arcade-shell {
+    border: 2px solid #111;
+    box-shadow: 5px 5px 0 #111;
+}
+
+html[data-theme="swiss"] .sidebar,
+html[data-theme="swiss"] .menu-bar,
+html[data-theme="swiss"] .toolbar {
+    background: #fff;
+    border-color: #111;
+}
+
+html[data-theme="swiss"] .title-bar {
+    color: #fff;
+    background: #111;
+}
+
+html[data-theme="swiss"] .window-title {
+    color: #111;
+    background: #fff;
+    border-color: #111;
+}
+
+html[data-theme="swiss"] .mini-title,
+html[data-theme="swiss"] .pink-title,
+html[data-theme="swiss"] .cat-game-header,
+html[data-theme="swiss"] .bug-hunt-header {
+    color: #fff;
+    background: #e3262e;
+}
+
+html[data-theme="swiss"] .content {
+    background-image: none;
+}
+
+html[data-theme="swiss"] .terminal {
+    color: #fff;
+    background: #111;
+    border-color: #111;
+}
+
+html[data-theme="swiss"] footer {
+    color: #fff;
+    background: #111;
+}
+
+
+/* =========================================================
+   03. DARK ACADEMIA
+   Library / leather / parchment
+   ========================================================= */
+
+html[data-theme="dark-academia"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #9a4d4d;
+    --pink-dark: #713737;
+    --pink-light: #ead9ce;
+
+    --purple: #777052;
+    --purple-light: #ddd7c0;
+
+    --cream: #eee5d0;
+    --silver: #413d35;
+    --silver-dark: #8d8573;
+
+    --black: #302c25;
+    --gray: #766d5d;
+    --border: #85765c;
+
+    --page-bg: #27251f;
+    --page-dot: rgba(212,190,146,.12);
+    --surface: #eee5d0;
+    --chrome: #d9ccb1;
+
+    --accent-start: #8d4747;
+    --accent-end: #673333;
+
+    --arcade-bg: #dfd4b9;
+    --arcade-bg-end: #cbbd9f;
+    --bug-header-start: #756b4f;
+    --bug-header-end: #504936;
+    --bug-board: #eee5d0;
+    --bug-grid: rgba(80,70,45,.15);
+    --bug-shadow: #4a4030;
+    --bug-footer: #cfc2a5;
+}
+
+html[data-theme="dark-academia"] body {
+    background:
+        radial-gradient(circle at 20% 10%, rgba(197,169,117,.08), transparent 25%),
+        linear-gradient(135deg, #302d25, #1e1d19);
+}
+
+html[data-theme="dark-academia"] .browser-window,
+html[data-theme="dark-academia"] .retro-window,
+html[data-theme="dark-academia"] .contact-window,
+html[data-theme="dark-academia"] .window-box,
+html[data-theme="dark-academia"] .meme-card,
+html[data-theme="dark-academia"] .cat-game,
+html[data-theme="dark-academia"] .bug-hunt-window,
+html[data-theme="dark-academia"] .arcade-shell {
+    color: var(--black);
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 6px 7px 0 #15140f;
+}
+
+html[data-theme="dark-academia"] .sidebar,
+html[data-theme="dark-academia"] .menu-bar,
+html[data-theme="dark-academia"] .toolbar {
+    background: #d9ccb1;
+    color: #302c25;
+}
+
+html[data-theme="dark-academia"] .title-bar,
+html[data-theme="dark-academia"] .cat-game-header,
+html[data-theme="dark-academia"] .bug-hunt-header {
+    color: #f4ead4;
+    background: linear-gradient(to right, #673c35, #47332e);
+}
+
+html[data-theme="dark-academia"] .window-title {
+    background: linear-gradient(to right, #d9ccb1, #eee5d0);
+}
+
+html[data-theme="dark-academia"] .terminal {
+    color: #d9c995;
+    background: #20221d;
+    border-color: #625b48;
+}
+
+html[data-theme="dark-academia"] footer {
+    color: #e8dcc2;
+    background: #25241f;
+}
+
+
+/* =========================================================
+   04. MACINTOSH SYSTEM 7
+   ========================================================= */
+
+html[data-theme="macintosh"] {
+    --body-font: Geneva, Arial, sans-serif;
+    --pixel: Monaco, "Courier New", monospace;
+
+    --pink: #3159a5;
+    --pink-dark: #203e79;
+    --pink-light: #dce5f5;
+
+    --purple: #bdbdbd;
+    --purple-light: #ededed;
+
+    --cream: #fff;
+    --silver: #d5d5d5;
+    --silver-dark: #777;
+
+    --black: #111;
+    --gray: #444;
+    --border: #111;
+
+    --page-bg: #bdbdbd;
+    --page-dot: #fff;
+    --surface: #fff;
+    --chrome: #d5d5d5;
+
+    --accent-start: #3159a5;
+    --accent-end: #203e79;
+
+    --arcade-bg: #ddd;
+    --arcade-bg-end: #fff;
+    --bug-header-start: #3159a5;
+    --bug-header-end: #203e79;
+    --bug-board: #fff;
+    --bug-grid: rgba(0,0,0,.1);
+    --bug-shadow: #555;
+    --bug-footer: #c7c7c7;
+}
+
+html[data-theme="macintosh"] body {
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,0,0,.025) 0 1px,
+            transparent 1px 3px
+        ),
+        #bdbdbd;
+}
+
+html[data-theme="macintosh"] .browser-window,
+html[data-theme="macintosh"] .retro-window,
+html[data-theme="macintosh"] .contact-window,
+html[data-theme="macintosh"] .window-box,
+html[data-theme="macintosh"] .meme-card,
+html[data-theme="macintosh"] .cat-game,
+html[data-theme="macintosh"] .bug-hunt-window,
+html[data-theme="macintosh"] .arcade-shell {
+    background: #fff;
+    border: 1px solid #111;
+    box-shadow: 4px 4px 0 #555;
+}
+
+html[data-theme="macintosh"] .title-bar,
+html[data-theme="macintosh"] .window-title,
+html[data-theme="macintosh"] .mini-title,
+html[data-theme="macintosh"] .pink-title,
+html[data-theme="macintosh"] .cat-game-header,
+html[data-theme="macintosh"] .bug-hunt-header {
+    color: #111;
+    background: #ddd;
+    border-color: #111;
+}
+
+html[data-theme="macintosh"] .title-bar {
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #111 0 1px,
+            #fff 1px 3px
+        );
+}
+
+html[data-theme="macintosh"] .title-bar {
+    color: #111;
+}
+
+html[data-theme="macintosh"] .sidebar,
+html[data-theme="macintosh"] .menu-bar,
+html[data-theme="macintosh"] .toolbar {
+    color: #111;
+    background: #d5d5d5;
+    border-color: #111;
+}
+
+html[data-theme="macintosh"] .terminal {
+    color: #fff;
+    background: #111;
+    border-color: #111;
+}
+
+html[data-theme="macintosh"] footer {
+    color: #111;
+    background: #d5d5d5;
+    border-top: 1px solid #111;
+}
+
+
+/* =========================================================
+   05. NORDIC
+   ========================================================= */
+
+html[data-theme="nordic"] {
+    --body-font: Inter, Arial, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #6d8791;
+    --pink-dark: #49646f;
+    --pink-light: #e3ecef;
+
+    --purple: #b7c6c5;
+    --purple-light: #edf2f0;
+
+    --cream: #f8f8f4;
+    --silver: #e4e6e1;
+    --silver-dark: #89938f;
+
+    --black: #283331;
+    --gray: #64716d;
+    --border: #b7c3be;
+
+    --page-bg: #e6ebe7;
+    --page-dot: #fff;
+    --surface: #fff;
+    --chrome: #edf1ed;
+
+    --accent-start: #78939c;
+    --accent-end: #516f78;
+
+    --arcade-bg: #edf2ee;
+    --arcade-bg-end: #e0e8e2;
+    --bug-header-start: #819b9c;
+    --bug-header-end: #607b7b;
+    --bug-board: #fff;
+    --bug-grid: rgba(70,90,85,.1);
+    --bug-shadow: #a2afaa;
+    --bug-footer: #e0e7e2;
+}
+
+html[data-theme="nordic"] body {
+    background: linear-gradient(145deg, #dce4df, #f5f6f1);
+}
+
+html[data-theme="nordic"] .browser-window,
+html[data-theme="nordic"] .retro-window,
+html[data-theme="nordic"] .contact-window,
+html[data-theme="nordic"] .window-box,
+html[data-theme="nordic"] .meme-card,
+html[data-theme="nordic"] .cat-game,
+html[data-theme="nordic"] .bug-hunt-window,
+html[data-theme="nordic"] .arcade-shell {
+    background: rgba(255,255,255,.94);
+    border-color: var(--border);
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(55,70,64,.12);
+}
+
+html[data-theme="nordic"] .sidebar,
+html[data-theme="nordic"] .menu-bar,
+html[data-theme="nordic"] .toolbar {
+    background: #edf1ed;
+}
+
+html[data-theme="nordic"] .title-bar,
+html[data-theme="nordic"] .cat-game-header,
+html[data-theme="nordic"] .bug-hunt-header {
+    color: #fff;
+    background: #68838b;
+}
+
+html[data-theme="nordic"] .window-title {
+    background: #f0f3ef;
+    color: var(--black);
+}
+
+html[data-theme="nordic"] .content {
+    background-image: none;
+}
+
+html[data-theme="nordic"] footer {
+    background: #52635f;
+    color: #e8efeb;
+}
+
+
+/* =========================================================
+   06. RESEARCH NOTEBOOK
+   Graph paper / technical notebook
+   ========================================================= */
+
+html[data-theme="research-notebook"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #b14e3d;
+    --pink-dark: #82372b;
+    --pink-light: #f4ddd6;
+
+    --purple: #637b8a;
+    --purple-light: #e3ebef;
+
+    --cream: #fffdf4;
+    --silver: #e5e1d4;
+    --silver-dark: #8d897d;
+
+    --black: #252b2c;
+    --gray: #626a6b;
+    --border: #8d9998;
+
+    --page-bg: #dfe8e7;
+    --page-dot: #c7d8d8;
+    --surface: #fffdf4;
+    --chrome: #e7ece9;
+
+    --accent-start: #b14e3d;
+    --accent-end: #84382c;
+
+    --arcade-bg: #edf2ef;
+    --arcade-bg-end: #dce7e4;
+    --bug-header-start: #627c87;
+    --bug-header-end: #405e68;
+    --bug-board: #fffdf4;
+    --bug-grid: rgba(68,98,108,.15);
+    --bug-shadow: #657b82;
+    --bug-footer: #dbe5e1;
+}
+
+html[data-theme="research-notebook"] body {
+    background:
+        linear-gradient(rgba(72,104,110,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(72,104,110,.12) 1px, transparent 1px),
+        #dfe8e7;
+    background-size: 28px 28px;
+}
+
+html[data-theme="research-notebook"] .browser-window,
+html[data-theme="research-notebook"] .retro-window,
+html[data-theme="research-notebook"] .contact-window,
+html[data-theme="research-notebook"] .window-box,
+html[data-theme="research-notebook"] .meme-card,
+html[data-theme="research-notebook"] .cat-game,
+html[data-theme="research-notebook"] .bug-hunt-window,
+html[data-theme="research-notebook"] .arcade-shell {
+    background: #fffdf4;
+    border-color: #778786;
+    box-shadow: 5px 6px 0 rgba(66,82,82,.2);
+}
+
+html[data-theme="research-notebook"] .sidebar,
+html[data-theme="research-notebook"] .menu-bar,
+html[data-theme="research-notebook"] .toolbar {
+    background: #e7ece9;
+}
+
+html[data-theme="research-notebook"] .title-bar,
+html[data-theme="research-notebook"] .cat-game-header,
+html[data-theme="research-notebook"] .bug-hunt-header {
+    color: #fff;
+    background: #587681;
+}
+
+html[data-theme="research-notebook"] .window-title {
+    color: #293537;
+    background: #f0eee3;
+}
+
+html[data-theme="research-notebook"] .mini-title,
+html[data-theme="research-notebook"] .pink-title {
+    color: #fff;
+    background: #b14e3d;
+}
+
+html[data-theme="research-notebook"] .terminal {
+    color: #d9e6db;
+    background: #25322f;
+    border-color: #526b64;
+}
+
+html[data-theme="research-notebook"] footer {
+    background: #3c4d49;
+    color: #e2ebe5;
+}
+
+
+/* =========================================================
+   07. BOTANICAL MODERN
+   ========================================================= */
+
+html[data-theme="botanical-modern"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: Arial, Helvetica, sans-serif;
+
+    --pink: #ad6852;
+    --pink-dark: #81493b;
+    --pink-light: #f1e1d9;
+
+    --purple: #899477;
+    --purple-light: #e6e9dc;
+
+    --cream: #f8f5eb;
+    --silver: #e5e0d2;
+    --silver-dark: #898477;
+
+    --black: #30352d;
+    --gray: #697066;
+    --border: #9aa28f;
+
+    --page-bg: #e1e6d9;
+    --page-dot: #f8f5eb;
+    --surface: #fcfaf2;
+    --chrome: #ecece0;
+
+    --accent-start: #788966;
+    --accent-end: #526247;
+
+    --arcade-bg: #eef0e3;
+    --arcade-bg-end: #dfe5d3;
+    --bug-header-start: #84916f;
+    --bug-header-end: #637353;
+    --bug-board: #fbf8ee;
+    --bug-grid: rgba(80,100,70,.12);
+    --bug-shadow: #78826b;
+    --bug-footer: #dfe5d6;
+}
+
+html[data-theme="botanical-modern"] body {
+    background:
+        radial-gradient(circle at 90% 10%, rgba(137,148,119,.18), transparent 25%),
+        linear-gradient(145deg, #dfe5d7, #f5f1e5);
+}
+
+html[data-theme="botanical-modern"] .browser-window,
+html[data-theme="botanical-modern"] .retro-window,
+html[data-theme="botanical-modern"] .contact-window,
+html[data-theme="botanical-modern"] .window-box,
+html[data-theme="botanical-modern"] .meme-card,
+html[data-theme="botanical-modern"] .cat-game,
+html[data-theme="botanical-modern"] .bug-hunt-window,
+html[data-theme="botanical-modern"] .arcade-shell {
+    background: #fcfaf2;
+    border-color: #9aa28f;
+    box-shadow: 4px 6px 0 rgba(82,98,71,.15);
+}
+
+html[data-theme="botanical-modern"] .sidebar,
+html[data-theme="botanical-modern"] .menu-bar,
+html[data-theme="botanical-modern"] .toolbar {
+    background: #ecece0;
+}
+
+html[data-theme="botanical-modern"] .title-bar,
+html[data-theme="botanical-modern"] .cat-game-header,
+html[data-theme="botanical-modern"] .bug-hunt-header {
+    color: #fffaf0;
+    background: linear-gradient(to right, #7d8e69, #5d6d4d);
+}
+
+html[data-theme="botanical-modern"] .window-title {
+    background: #eeeadd;
+}
+
+html[data-theme="botanical-modern"] .content {
+    background-image: none;
+}
+
+html[data-theme="botanical-modern"] footer {
+    color: #e8ecdd;
+    background: #46523d;
+}
+
+
+/* =========================================================
+   08. NEO-RETRO COMPUTING
+   Restrained 80s/90s computer aesthetic
+   ========================================================= */
+
+html[data-theme="neo-retro"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #d16b47;
+    --pink-dark: #99442d;
+    --pink-light: #f3ddd3;
+
+    --purple: #6879a3;
+    --purple-light: #e0e4ef;
+
+    --cream: #f4f0e5;
+    --silver: #d4d2ca;
+    --silver-dark: #74746e;
+
+    --black: #252522;
+    --gray: #595a55;
+    --border: #555650;
+
+    --page-bg: #c7c9bd;
+    --page-dot: #e8e5d8;
+    --surface: #f8f5eb;
+    --chrome: #d9d8cf;
+
+    --accent-start: #d16b47;
+    --accent-end: #99442d;
+
+    --arcade-bg: #dadbd0;
+    --arcade-bg-end: #c4c8bc;
+    --bug-header-start: #6879a3;
+    --bug-header-end: #4e5d82;
+    --bug-board: #f7f3e7;
+    --bug-grid: rgba(60,65,75,.14);
+    --bug-shadow: #686b62;
+    --bug-footer: #c6c8bd;
+}
+
+html[data-theme="neo-retro"] body {
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,0,0,.025) 0 1px,
+            transparent 1px 4px
+        ),
+        #c7c9bd;
+}
+
+html[data-theme="neo-retro"] .browser-window,
+html[data-theme="neo-retro"] .retro-window,
+html[data-theme="neo-retro"] .contact-window,
+html[data-theme="neo-retro"] .window-box,
+html[data-theme="neo-retro"] .meme-card,
+html[data-theme="neo-retro"] .cat-game,
+html[data-theme="neo-retro"] .bug-hunt-window,
+html[data-theme="neo-retro"] .arcade-shell {
+    background: #f8f5eb;
+    border: 2px solid #555650;
+    box-shadow: 5px 5px 0 #77786f;
+}
+
+html[data-theme="neo-retro"] .sidebar,
+html[data-theme="neo-retro"] .menu-bar,
+html[data-theme="neo-retro"] .toolbar {
+    background: #d9d8cf;
+}
+
+html[data-theme="neo-retro"] .title-bar {
+    color: #fff;
+    background: #4e5d82;
+}
+
+html[data-theme="neo-retro"] .window-title {
+    background: #dddacf;
+}
+
+html[data-theme="neo-retro"] .mini-title,
+html[data-theme="neo-retro"] .pink-title {
+    color: #fff;
+    background: #b45638;
+}
+
+html[data-theme="neo-retro"] .terminal {
+    color: #d8e7c8;
+    background: #28322b;
+    border-color: #56665a;
+}
+
+html[data-theme="neo-retro"] footer {
+    color: #e9e6d8;
+    background: #454942;
+}
+
+
+/* =========================================================
+   09. COFFEEHOUSE
+   Analog / warm / independent developer
+   ========================================================= */
+
+html[data-theme="coffeehouse"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #b56a45;
+    --pink-dark: #82452d;
+    --pink-light: #f2dfd2;
+
+    --purple: #8a806d;
+    --purple-light: #e8e1d5;
+
+    --cream: #f7efe1;
+    --silver: #ddd2c1;
+    --silver-dark: #897d6c;
+
+    --black: #302a24;
+    --gray: #6d6257;
+    --border: #a9967e;
+
+    --page-bg: #d8c9b5;
+    --page-dot: #f8efe1;
+    --surface: #fff8eb;
+    --chrome: #e9dece;
+
+    --accent-start: #b56a45;
+    --accent-end: #82452d;
+
+    --arcade-bg: #ecdfcf;
+    --arcade-bg-end: #dfccb5;
+    --bug-header-start: #93664d;
+    --bug-header-end: #704936;
+    --bug-board: #fff8eb;
+    --bug-grid: rgba(110,75,50,.12);
+    --bug-shadow: #876b53;
+    --bug-footer: #dfcfba;
+}
+
+html[data-theme="coffeehouse"] body {
+    background:
+        radial-gradient(circle at 15% 15%, rgba(255,255,255,.3), transparent 22%),
+        linear-gradient(135deg, #d7c6b0, #f0e5d5 55%, #d2bda5);
+}
+
+html[data-theme="coffeehouse"] .browser-window,
+html[data-theme="coffeehouse"] .retro-window,
+html[data-theme="coffeehouse"] .contact-window,
+html[data-theme="coffeehouse"] .window-box,
+html[data-theme="coffeehouse"] .meme-card,
+html[data-theme="coffeehouse"] .cat-game,
+html[data-theme="coffeehouse"] .bug-hunt-window,
+html[data-theme="coffeehouse"] .arcade-shell {
+    background: #fff8eb;
+    border-color: #a9967e;
+    box-shadow: 5px 6px 0 rgba(86,65,45,.18);
+}
+
+html[data-theme="coffeehouse"] .sidebar,
+html[data-theme="coffeehouse"] .menu-bar,
+html[data-theme="coffeehouse"] .toolbar {
+    background: #e9dece;
+}
+
+html[data-theme="coffeehouse"] .title-bar,
+html[data-theme="coffeehouse"] .cat-game-header,
+html[data-theme="coffeehouse"] .bug-hunt-header {
+    color: #fff8eb;
+    background: linear-gradient(to right, #9a6044, #744a36);
+}
+
+html[data-theme="coffeehouse"] .window-title {
+    background: #eee2d0;
+}
+
+html[data-theme="coffeehouse"] .terminal {
+    color: #e7d7b9;
+    background: #302c26;
+    border-color: #665846;
+}
+
+html[data-theme="coffeehouse"] footer {
+    color: #eee1ce;
+    background: #4a3d31;
+}
+
+
+/* =========================================================
+   10. MISSION CONTROL
+   Aerospace / technical / calm
+   ========================================================= */
+
+html[data-theme="mission-control"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #e36b32;
+    --pink-dark: #a8471d;
+    --pink-light: #f6dfd1;
+
+    --purple: #527ca3;
+    --purple-light: #dce7f0;
+
+    --cream: #f2f2ec;
+    --silver: #d7dad5;
+    --silver-dark: #777e7a;
+
+    --black: #202a2d;
+    --gray: #5c6668;
+    --border: #69777b;
+
+    --page-bg: #c8d1d0;
+    --page-dot: #eef1ec;
+    --surface: #f7f7f1;
+    --chrome: #dce1dd;
+
+    --accent-start: #e36b32;
+    --accent-end: #b34b21;
+
+    --arcade-bg: #dce4e3;
+    --arcade-bg-end: #c5d1d0;
+    --bug-header-start: #547da0;
+    --bug-header-end: #385d7d;
+    --bug-board: #f5f5ef;
+    --bug-grid: rgba(55,75,85,.15);
+    --bug-shadow: #68777c;
+    --bug-footer: #cbd5d3;
+}
+
+html[data-theme="mission-control"] body {
+    background:
+        linear-gradient(rgba(40,65,70,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40,65,70,.06) 1px, transparent 1px),
+        #c8d1d0;
+    background-size: 25px 25px;
+}
+
+html[data-theme="mission-control"] .browser-window,
+html[data-theme="mission-control"] .retro-window,
+html[data-theme="mission-control"] .contact-window,
+html[data-theme="mission-control"] .window-box,
+html[data-theme="mission-control"] .meme-card,
+html[data-theme="mission-control"] .cat-game,
+html[data-theme="mission-control"] .bug-hunt-window,
+html[data-theme="mission-control"] .arcade-shell {
+    background: #f7f7f1;
+    border-color: #69777b;
+    box-shadow: 5px 6px 0 rgba(48,66,72,.2);
+}
+
+html[data-theme="mission-control"] .sidebar,
+html[data-theme="mission-control"] .menu-bar,
+html[data-theme="mission-control"] .toolbar {
+    background: #dce1dd;
+}
+
+html[data-theme="mission-control"] .title-bar {
+    color: #fff;
+    background: #304f62;
+}
+
+html[data-theme="mission-control"] .window-title {
+    background: #e1e4df;
+}
+
+html[data-theme="mission-control"] .mini-title,
+html[data-theme="mission-control"] .pink-title {
+    color: #fff;
+    background: #d45f2d;
+}
+
+html[data-theme="mission-control"] .cat-game-header,
+html[data-theme="mission-control"] .bug-hunt-header {
+    color: #fff;
+    background: #527ca3;
+}
+
+html[data-theme="mission-control"] .terminal {
+    color: #bce5c9;
+    background: #172321;
+    border-color: #4e6b62;
+}
+
+html[data-theme="mission-control"] footer {
+    color: #dbe5e2;
+    background: #2d3e42;
+}
+
+
+/* =========================================================
+   11. INK & PAPER
+   Editorial / sketchbook / almost monochrome
+   ========================================================= */
+
+html[data-theme="ink-paper"] {
+    --body-font: Georgia, "Times New Roman", serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #9c3932;
+    --pink-dark: #712824;
+    --pink-light: #f1dedb;
+
+    --purple: #777;
+    --purple-light: #ededeb;
+
+    --cream: #f9f7f0;
+    --silver: #e2e0d8;
+    --silver-dark: #777;
+
+    --black: #191919;
+    --gray: #5c5c58;
+    --border: #292929;
+
+    --page-bg: #e8e5dc;
+    --page-dot: #faf8f0;
+    --surface: #fffdf6;
+    --chrome: #eeeae1;
+
+    --accent-start: #9c3932;
+    --accent-end: #712824;
+
+    --arcade-bg: #f0ede4;
+    --arcade-bg-end: #e4e0d5;
+    --bug-header-start: #333;
+    --bug-header-end: #181818;
+    --bug-board: #fffdf6;
+    --bug-grid: rgba(0,0,0,.09);
+    --bug-shadow: #777;
+    --bug-footer: #ddd9ce;
+}
+
+html[data-theme="ink-paper"] body {
+    background:
+        radial-gradient(
+            circle at 30% 20%,
+            rgba(0,0,0,.025) 0 1px,
+            transparent 2px
+        ),
+        #e8e5dc;
+    background-size: 17px 17px;
+}
+
+html[data-theme="ink-paper"] .browser-window,
+html[data-theme="ink-paper"] .retro-window,
+html[data-theme="ink-paper"] .contact-window,
+html[data-theme="ink-paper"] .window-box,
+html[data-theme="ink-paper"] .meme-card,
+html[data-theme="ink-paper"] .cat-game,
+html[data-theme="ink-paper"] .bug-hunt-window,
+html[data-theme="ink-paper"] .arcade-shell {
+    background: #fffdf6;
+    border: 1px solid #292929;
+    box-shadow: 5px 5px 0 #292929;
+}
+
+html[data-theme="ink-paper"] .sidebar,
+html[data-theme="ink-paper"] .menu-bar,
+html[data-theme="ink-paper"] .toolbar {
+    background: #eeeae1;
+    border-color: #292929;
+}
+
+html[data-theme="ink-paper"] .title-bar {
+    color: #fff;
+    background: #191919;
+}
+
+html[data-theme="ink-paper"] .window-title {
+    color: #191919;
+    background: #f2eee5;
+}
+
+html[data-theme="ink-paper"] .mini-title,
+html[data-theme="ink-paper"] .pink-title {
+    color: #fff;
+    background: #9c3932;
+}
+
+html[data-theme="ink-paper"] .cat-game-header,
+html[data-theme="ink-paper"] .bug-hunt-header {
+    color: #fff;
+    background: #292929;
+}
+
+html[data-theme="ink-paper"] .content {
+    background-image: none;
+}
+
+html[data-theme="ink-paper"] .terminal {
+    color: #d8e4d2;
+    background: #20231f;
+    border-color: #333;
+}
+
+html[data-theme="ink-paper"] footer {
+    color: #eeeae0;
+    background: #292929;
+}
+/* =========================================================
+   12. BRUTALIST
+   Raw / editorial / unapologetically structural
+   ========================================================= */
+
+html[data-theme="brutalist"] {
+    --body-font: Arial, Helvetica, sans-serif;
+    --pixel: "Courier New", monospace;
+
+    --pink: #ff3b30;
+    --pink-dark: #b51f18;
+    --pink-light: #ffe3e0;
+
+    --purple: #6c4cff;
+    --purple-light: #e8e3ff;
+
+    --cream: #f4f2ea;
+    --silver: #d6d6d0;
+    --silver-dark: #666;
+
+    --black: #080808;
+    --gray: #4b4b48;
+    --border: #080808;
+
+    --page-bg: #e7e5dc;
+    --page-dot: #080808;
+
+    --surface: #f8f7f1;
+    --chrome: #deddd5;
+
+    --accent-start: #ff3b30;
+    --accent-end: #ff3b30;
+
+    --arcade-bg: #deddd5;
+    --arcade-bg-end: #f4f2ea;
+
+    --bug-header-start: #080808;
+    --bug-header-end: #080808;
+
+    --bug-board: #f8f7f1;
+    --bug-grid: rgba(0, 0, 0, .12);
+    --bug-shadow: #080808;
+    --bug-footer: #d2d1c9;
+}
+
+
+/* ---------------------------------------------------------
+   PAGE
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] body {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(0,0,0,.035) 1px,
+            transparent 1px
+        ),
+        #e7e5dc;
+
+    background-size: 32px 32px;
+}
+
+
+/* ---------------------------------------------------------
+   WINDOWS
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .browser-window,
+html[data-theme="brutalist"] .retro-window,
+html[data-theme="brutalist"] .contact-window,
+html[data-theme="brutalist"] .window-box,
+html[data-theme="brutalist"] .meme-card,
+html[data-theme="brutalist"] .cat-game,
+html[data-theme="brutalist"] .bug-hunt-window,
+html[data-theme="brutalist"] .arcade-shell {
+    color: #080808;
+    background: #f8f7f1;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+
+    box-shadow: 8px 8px 0 #080808;
+}
+
+
+/* ---------------------------------------------------------
+   CHROME
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .sidebar,
+html[data-theme="brutalist"] .menu-bar,
+html[data-theme="brutalist"] .toolbar,
+html[data-theme="brutalist"] .arcade-game-window,
+html[data-theme="brutalist"] .cat-game-footer,
+html[data-theme="brutalist"] .bug-hunt-footer {
+    color: #080808;
+    background: #deddd5;
+
+    border-color: #080808;
+}
+
+
+/* ---------------------------------------------------------
+   TITLE BARS
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .title-bar {
+    color: #fff;
+
+    background: #080808;
+
+    border-bottom: 3px solid #080808;
+    border-radius: 0;
+}
+
+
+html[data-theme="brutalist"] .window-title {
+    color: #080808;
+
+    background: #f8f7f1;
+
+    border-bottom: 3px solid #080808;
+}
+
+
+html[data-theme="brutalist"] .mini-title {
+    color: #fff;
+
+    background: #ff3b30;
+
+    border-color: #080808;
+}
+
+
+html[data-theme="brutalist"] .pink-title {
+    color: #fff;
+
+    background: #080808;
+
+    border-color: #080808;
+}
+
+
+/* ---------------------------------------------------------
+   CONTENT
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .content {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(0,0,0,.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 20px 20px;
+}
+
+
+/* ---------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .retro-button,
+html[data-theme="brutalist"] .contact-button {
+    color: #fff;
+
+    background: #ff3b30;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+
+    box-shadow: 5px 5px 0 #080808;
+
+    transition:
+        transform .08s ease,
+        box-shadow .08s ease;
+}
+
+
+html[data-theme="brutalist"] .retro-button:hover,
+html[data-theme="brutalist"] .contact-button:hover {
+    transform: translate(4px, 4px);
+
+    box-shadow: 1px 1px 0 #080808;
+}
+
+
+/* ---------------------------------------------------------
+   LINKS / NAVIGATION
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .side-menu a:hover,
+html[data-theme="brutalist"] .side-menu a.active {
+    color: #fff;
+
+    background: #080808;
+
+    border-left-color: #ff3b30;
+}
+
+
+/* ---------------------------------------------------------
+   TERMINAL
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .terminal {
+    color: #f4f2ea;
+
+    background: #080808;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+
+    box-shadow: 8px 8px 0 #ff3b30;
+}
+
+
+/* ---------------------------------------------------------
+   SKILL / PROGRESS BARS
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .bar {
+    background: #deddd5;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+}
+
+
+html[data-theme="brutalist"] .bar i {
+    background: #ff3b30;
+
+    border-radius: 0;
+}
+
+
+/* ---------------------------------------------------------
+   ARCADE
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .arcade-game-option {
+    color: #080808;
+
+    background: #f8f7f1;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+
+    box-shadow: 4px 4px 0 #080808;
+}
+
+
+html[data-theme="brutalist"] .arcade-game-option:hover,
+html[data-theme="brutalist"] .arcade-game-option.is-active {
+    color: #fff;
+
+    background: #080808;
+
+    border-color: #080808;
+
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 #080808;
+}
+
+
+/* ---------------------------------------------------------
+   CAT / BUG WINDOWS
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] .cat-game-header,
+html[data-theme="brutalist"] .bug-hunt-header {
+    color: #fff;
+
+    background: #080808;
+
+    border-bottom: 3px solid #080808;
+}
+
+
+html[data-theme="brutalist"] .stamp {
+    color: #080808;
+
+    border: 3px solid #080808;
+    border-radius: 0;
+
+    transform: rotate(-3deg);
+}
+
+
+/* ---------------------------------------------------------
+   FOOTER
+   --------------------------------------------------------- */
+
+html[data-theme="brutalist"] footer {
+    color: #fff;
+
+    background: #080808;
+
+    border-top: 3px solid #080808;
+}
